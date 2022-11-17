@@ -33,13 +33,13 @@
               <a class="menu-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-list list">
-              <a class="menu-link" href="#">Kontakt</a>
+              <a class="menu-link" href="#">Kontakty</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contact list">
           <li class="list">
-            <a class="contact-link" href="mailto:info@example.com">
+            <a class="link" href="mailto:info@example.com">
               <svg class="contact-icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="list">
-            <a class="contact-link" href="tel:+48111111111">
+            <a class="link" href="tel:+48111111111">
               <svg class="contact-icon-phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -63,7 +63,10 @@
           <h1 class="banner-title">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="main-button" type="button">Zamów usługe</button>
+          <button class="main-button" type="button" data-modal-open>
+            Zamów usługe
+          </button>
+          <div></div>
         </div>
       </section>
       <section class="section">
@@ -131,6 +134,9 @@
                 alt="osoba przy komputerze z wydrukowanym algorytmem"
                 height="294"
               />
+              <div class="label">
+                <p>APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li class="list">
               <img
@@ -139,6 +145,9 @@
                 alt="programista ogląda mokapy na ekranie"
                 height="294"
               />
+              <div class="label">
+                <p>APLIKACJE MOBILNE</p>
+              </div>
             </li>
             <li class="list">
               <img
@@ -147,6 +156,9 @@
                 alt="osoba ogląda palętę kolorów na tablecie"
                 height="294"
               />
+              <div class="label">
+                <p>ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -440,6 +452,11 @@
           </ul>
         </div>
       </div>
+      <button data-modal-open>Open></button>
+      <div class="modal is-hidden" data-modal>
+        <button data-modal-close>close</button>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
