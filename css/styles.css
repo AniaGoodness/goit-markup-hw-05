@@ -516,7 +516,8 @@ a.footer-tel-no {
     display: block;
     text-decoration: none;
     color: currentColor;
-    transition-property: color;
+        transform: translateY(0%);
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -531,7 +532,7 @@ a.footer-tel-no {
     background-color: rgba(33, 150, 243, 0.9);
     position: absolute;
     transform: translateY(0%);
-    transition-property: color, box-shadow;
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -543,7 +544,8 @@ a.footer-tel-no {
     letter-spacing: 0.03em;
 
 }
-.hover-overlay:hover {
+.hover-overlay:hover,
+.hover-overlay:focus {
     transform: translateY(-100%);
 }
 
@@ -589,6 +591,7 @@ h3.portfolio-title-card {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 /* =====modal====== */
 
