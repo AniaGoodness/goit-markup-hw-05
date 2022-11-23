@@ -528,10 +528,12 @@ a.footer-tel-no {
 }
 .hover-overlay {
     width: 100%;
+    top: 0;
+    left: 0;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     position: absolute;
-    transform: translateY(0%);
+    transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -546,7 +548,7 @@ a.footer-tel-no {
 }
 .hover-overlay:hover,
 .hover-overlay:focus {
-    transform: translateY(-100%);
+    transform: translateY(0%);
 }
 
 
