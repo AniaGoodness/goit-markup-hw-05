@@ -526,6 +526,14 @@ a.footer-tel-no {
     overflow: hidden;
     position: relative;
 }
+.hover-overlay p {
+    color: var(--primary-color);
+    padding: 49px 45px 49px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+}
 .hover-overlay {
     width: 100%;
     top: 0;
@@ -538,16 +546,10 @@ a.footer-tel-no {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hover-overlay p {
-    color: var(--primary-color);
-    padding: 49px 45px 49px 24px;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-
-}
-.hover-overlay:hover,
-.hover-overlay:focus {
+.portfolio-link:hover
+.hover-overlay,
+.portfolio-link:focus
+.hover-overlay {
     transform: translateY(0%);
 }
 
@@ -595,6 +597,7 @@ h3.portfolio-title-card {
         1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
 /* =====modal====== */
 
 .backdrop {
